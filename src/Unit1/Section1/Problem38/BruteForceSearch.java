@@ -13,11 +13,15 @@ package Unit1.Section1.Problem38;
  */
 public class BruteForceSearch {
     public static void main(String[] args) {
-        
+
     }
     public static int rank(int[] a,int key){
         //TODO
-
-        return 0;
+        for (int i=0;i<a.length;i++){
+            if(a[i]==key){
+                return i;
+            }
+        }
+        return -1;
     }
 }
