@@ -17,9 +17,16 @@ public class BinarySearch {
 
     }
 
-    public static int rank(int[] a, int key){
+    public static int rank(int[] a, int key, int lo, int hi){
         //TODO
-
-        return 0;
+      if(a[lo]>a[hi])return -1;
+        int mid=(hi-lo)/2+lo;
+        if(a[mid]==key){
+            return mid;}
+        else if(key<a[mid]){
+            return rank(a,key,lo,mid);
+        }else {
+            return rank(a,key,mid,hi);
+        }
     }
 }
