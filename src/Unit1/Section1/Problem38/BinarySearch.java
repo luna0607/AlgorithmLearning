@@ -22,11 +22,12 @@ public class BinarySearch {
       if(a[lo]>a[hi])return -1;
         int mid=(hi-lo)/2+lo;
         if(a[mid]==key){
-            return mid;}
+            return mid;
+        }
         else if(key<a[mid]){
-            return rank(a,key,lo,mid);
+            return rank(a,key,lo,mid+1);
         }else {
-            return rank(a,key,mid,hi);
+            return rank(a,key,mid-1,hi);
         }
     }
 }

@@ -14,9 +14,9 @@ public class Test {
         long c=GregorianCalendar.getInstance().getTimeInMillis();
         System.out.println("BinarySearch use "+(c-b)+" ms");
 
-         b= GregorianCalendar.getInstance().getTimeInMillis();
+         long d= GregorianCalendar.getInstance().getTimeInMillis();
         System.out.println("key located in"+ BruteForceSearch.rank(a,247));
-        c=GregorianCalendar.getInstance().getTimeInMillis();
+        long e=GregorianCalendar.getInstance().getTimeInMillis();
         System.out.println("BruteForceSearch use "+(c-b)+" ms");
     }
 }
